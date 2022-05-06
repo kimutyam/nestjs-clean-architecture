@@ -1,0 +1,36 @@
+/* See https://www.typescriptlang.org/tsconfig */
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ESNext",
+    "module": "commonjs",
+    "sourceMap": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "preserveSymlinks": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "assumeChangesOnlyAffectDirectDependencies": true,
+    "emitBOM": true,
+    "extendedDiagnostics": false, // パフォーマンス解析時に
+    "noErrorTruncation": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "exactOptionalPropertyTypes": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": "./src",
+    "outDir": "./dist"
+  },
+}

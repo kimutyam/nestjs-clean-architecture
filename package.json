@@ -1,0 +1,59 @@
+{
+  "name": "nestjs-clean-architecture",
+  "version": "0.0.1",
+  "description": "",
+  "author": "kimutyam",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "prepare": "husky install",
+    "build": "nest build",
+    "format": "prettier --check \"{src,scripts,test}/**/*.ts\"",
+    "format:fix": "prettier --write \"{src,scripts,test}/**/*.ts\"",
+    "start:local": "nest start",
+    "start:debug": "nest start --debug --watch",
+    "start": "node dist/main.js",
+    "lint": "eslint \"{src,scripts,test}/**/*.ts\"",
+    "lint:fix": "eslint \"{src,scripts,test}/**/*.ts\" --fix"
+  },
+  "dependencies": {
+    "@types/node": "16.11.22",
+    "typescript": "4.5.5",
+    "@nestjs/common": "8.2.6",
+    "@nestjs/core": "8.2.6",
+    "@nestjs/platform-express": "8.2.6",
+    "reflect-metadata": "0.1.13",
+    "rxjs": "7.5.4"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "8.2.0",
+    "@nestjs/schematics": "8.0.6",
+    "ts-node": "10.2.1",
+    "tsconfig-paths": "3.10.1",
+    "husky": "7.0.4",
+    "lint-staged": "11.2.6",
+    "prettier": "2.5.1",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-prettier": "3.4.1",
+    "better-typescript-lib": "2.0.0",
+    "@typescript-eslint/eslint-plugin": "5.11.0",
+    "@typescript-eslint/parser": "5.11.0",
+    "ts-loader": "9.2.6",
+    "webpack": "5.0.0"
+
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.ts": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ]
+  }
+}
