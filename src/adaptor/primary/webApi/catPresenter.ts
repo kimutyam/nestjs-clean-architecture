@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Age } from '../../../domain/cat/age';
+import { CatAge } from '../../../domain/cat/catAge';
 import type { Output } from '../../../useCase/receiveCatUseCase';
 import type { CatViewModel } from './catViewModel';
 
@@ -8,7 +8,7 @@ export class CatPresenter {
   run({ name, age }: Output): CatViewModel {
     return {
       name,
-      generation: Age.judge(age),
+      generation: CatAge.judge(age),
     };
   }
 }
