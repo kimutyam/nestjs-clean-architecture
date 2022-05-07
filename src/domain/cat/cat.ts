@@ -1,10 +1,11 @@
 import { CatAge } from './catAge';
 import type { CatGeneration } from './catGeneration';
 import type { CatId } from './catId';
+import type { CatName } from './catName';
 
 export type Cat = Readonly<{
   id: CatId;
-  name: string;
+  name: CatName;
   age: CatAge;
 }>;
 
