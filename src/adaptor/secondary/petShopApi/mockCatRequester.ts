@@ -1,14 +1,15 @@
 import type { Provider } from '@nestjs/common';
 import { Injectable } from '@nestjs/common';
-import type { Cat } from '../../../domain/cat';
-import type { ICatRequester } from '../../../domain/catRequester';
-import { CAT_REQUESTER_TOKEN } from '../../../domain/catRequester';
+import type { Cat } from '../../../domain/cat/cat';
+import type { CatId } from '../../../domain/cat/catId';
+import type { ICatRequester } from '../../../domain/cat/catRequester';
+import { CAT_REQUESTER_TOKEN } from '../../../domain/cat/catRequester';
 
-const cats: Map<string, Cat> = new Map();
+const cats: Map<CatId, Cat> = new Map();
 
 @Injectable()
 export class MockCatRequester implements ICatRequester {
-  get(catId: string): Promise<Cat | undefined> {
+  get(catId: CatId): Promise<Cat | undefined> {
     return Promise.resolve(cats.get(catId));
   }
 }
