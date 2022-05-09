@@ -1,7 +1,7 @@
 import type { Provider } from '@nestjs/common';
 import { Module } from '@nestjs/common';
-import { AdaptorMemoryStoreModule } from '../adaptor/secondary/memoryStore/adaptorMemoryStoreModule';
-import { AdaptorPetShopApiModule } from '../adaptor/secondary/petShopApi/adaptorPetShopApiModule';
+import { AdaptorMemoryStoreModule } from 'adaptor/secondary/memoryStore/adaptorMemoryStoreModule';
+import { AdaptorPetShopApiModule } from 'adaptor/secondary/petShopApi/adaptorPetShopApiModule';
 import { ReceiveCatInteractor } from './receiveCatInteractor';
 import { RECEIVE_CAT_USECASE_TOKEN } from './receiveCatUseCase';
 

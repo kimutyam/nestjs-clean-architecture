@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { CatAge } from '../../../domain/cat/catAge';
-import { CatName } from '../../../domain/cat/catName';
-import type { Output } from '../../../useCase/receiveCatUseCase';
+import { CatAge } from 'domain/cat/catAge';
+import { CatName } from 'domain/cat/catName';
+import type { Output } from 'useCase/receiveCatUseCase';
 import type { CatViewModel } from './catViewModel';
 
 @Injectable()

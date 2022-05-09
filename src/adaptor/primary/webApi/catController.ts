@@ -1,7 +1,7 @@
 import { BadRequestException, Controller, Inject, Param, Put } from '@nestjs/common';
 import * as O from 'fp-ts/Option';
-import { CatId } from '../../../domain/cat/catId';
-import { RECEIVE_CAT_USECASE_TOKEN, ReceiveCatUseCase } from '../../../useCase/receiveCatUseCase';
+import { CatId } from 'domain/cat/catId';
+import { RECEIVE_CAT_USECASE_TOKEN, ReceiveCatUseCase } from 'useCase/receiveCatUseCase';
 import { CatPresenter } from './catPresenter';
 import type { CatViewModel } from './catViewModel';
 

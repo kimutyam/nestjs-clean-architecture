@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { UseCaseModule } from '../../../useCase/useCaseModule';
+import { UseCaseModule } from 'useCase/useCaseModule';
 import { CatPresenter } from './catPresenter';
 import { CatController } from './catController';
 
