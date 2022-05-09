@@ -1,9 +1,7 @@
-import type { Provider } from '@nestjs/common';
 import { Injectable } from '@nestjs/common';
 import type { Cat } from '../../../domain/cat/cat';
 import type { CatId } from '../../../domain/cat/catId';
 import type { ICatRepository } from '../../../domain/cat/catRepository';
-import { CAT_REPOSITORY_TOKEN } from '../../../domain/cat/catRepository';
 
 const cats: Map<CatId, Cat> = new Map();
 
@@ -14,8 +12,3 @@ export class CatRepository implements ICatRepository {
     return Promise.resolve();
   }
 }
-
-export const CatRepositoryProvider: Provider = {
-  provide: CAT_REPOSITORY_TOKEN,
-  useClass: CatRepository,
-};
