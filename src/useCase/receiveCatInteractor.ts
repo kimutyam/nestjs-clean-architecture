@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common';
-import { CAT_REPOSITORY_TOKEN, ICatRepository } from '../domain/cat/catRepository';
-import { CAT_REQUESTER_TOKEN, ICatRequester } from '../domain/cat/catRequester';
+import { CAT_REPOSITORY_TOKEN, ICatRepository } from 'domain/cat/catRepository';
+import { CAT_REQUESTER_TOKEN, ICatRequester } from 'domain/cat/catRequester';
 import type { Input, ReceiveCatUseCase, Output } from './receiveCatUseCase';
 
 @Injectable()

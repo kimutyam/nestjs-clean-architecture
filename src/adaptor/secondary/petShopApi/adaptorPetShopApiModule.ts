@@ -1,6 +1,6 @@
 import type { Provider } from '@nestjs/common';
 import { Module } from '@nestjs/common';
-import { CAT_REQUESTER_TOKEN } from '../../../domain/cat/catRequester';
+import { CAT_REQUESTER_TOKEN } from 'domain/cat/catRequester';
 import { MockCatRequester } from './mockCatRequester';
 
 export const CatRequesterProvider: Provider = {

@@ -1,5 +1,5 @@
-import type { Cat } from '../domain/cat/cat';
-import type { CatId } from '../domain/cat/catId';
+import type { Cat } from 'domain/cat/cat';
+import type { CatId } from 'domain/cat/catId';
 import type { UseCase } from './useCase';
 
 export type Input = Readonly<{

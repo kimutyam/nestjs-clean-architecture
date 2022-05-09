@@ -1,6 +1,6 @@
 import type { Provider } from '@nestjs/common';
 import { Module } from '@nestjs/common';
-import { CAT_REPOSITORY_TOKEN } from '../../../domain/cat/catRepository';
+import { CAT_REPOSITORY_TOKEN } from 'domain/cat/catRepository';
 import { CatRepository } from './catRepository';
 
 export const CatRepositoryProvider: Provider = {
